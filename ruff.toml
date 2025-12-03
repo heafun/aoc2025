@@ -34,11 +34,12 @@ indent-width = 4
 select = ["ALL"]
 ignore = [
     "INP001", # Allow implicit namespace packages
-    "D100", # No module docstrings
-    "D103", # No method docstrings
+    "D", # No docstrings
     "T201", # Allow print
     "PLR2004", # Allow magic numbers
     "PTH123", # Allow direct use of open()
+    "FBT001", # Allow boolean positional arguments
+    "FBT002", # Allow boolean positional arguments with default
 ]
 
 # Allow fix for all enabled rules (when `--fix`) is provided.
