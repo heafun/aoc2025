@@ -18,7 +18,7 @@ def count_paper_rolls_around(
     return counter
 
 
-def remove_acceessable_paper_rolls(paper_roll_map: list[list[str]]) -> int:
+def remove_accessable_paper_rolls(paper_roll_map: list[list[str]]) -> int:
     accessable_rolls = 0
 
     for y in range(len(paper_roll_map)):
@@ -42,7 +42,7 @@ last_removed_count = 1
 accessable_rolls = 0
 
 while last_removed_count > 0:
-    last_removed_count = remove_acceessable_paper_rolls(paper_roll_map)
+    last_removed_count = remove_accessable_paper_rolls(paper_roll_map)
     accessable_rolls += last_removed_count
 
 print(accessable_rolls)
