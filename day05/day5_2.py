@@ -5,7 +5,6 @@ ranges: list[list[int]] = []
 
 for line in lines:
     if len(line) == 0:
-        reading_ranges = False
         break
 
     next_range = [int(x) for x in line.split("-")]
