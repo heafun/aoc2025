@@ -38,7 +38,7 @@ for index1, point1 in enumerate(points):
 
 distance_list = [
     distance[0].split(",")
-    for distance in sorted(distances.items(), key=lambda item: item[1])[:1000]
+    for distance in sorted(distances.items(), key=lambda item: item[1])[: len(points)]
 ]
 
 circuit_list: list[set[str]] = []

@@ -58,6 +58,6 @@ for point1, point2 in distance_list:
     if len(combined_circuit) > 0:
         circuit_list.append(combined_circuit)
 
-    if len(circuit_list) == 1 and len(circuit_list[0]) == 1000:
+    if len(circuit_list) == 1 and len(circuit_list[0]) == len(points):
         print(str(points[int(point1)].x * points[int(point2)].x))
         break
