@@ -8,7 +8,6 @@ class Vector3:
         self.x = x
         self.y = y
         self.z = z
-        self.neighbours: set[int] = set()
 
     def get_distance(self, other_point: Vector3) -> float:
         return sqrt(
